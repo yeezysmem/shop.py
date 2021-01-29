@@ -15,13 +15,13 @@ body {
   font-weight: normal;
 }
 
-li {
-  list-style: none;
-}
-
-a {
+body a {
   text-decoration: none;
   color: #000;
+}
+
+li {
+  list-style: none;
 }
 
 h1 {
@@ -201,11 +201,17 @@ h1 {
   z-index: 999;
   position: absolute;
   content: "";
-  width: 5px;
-  height: 5px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: 6;
+  right: 174px;
+  border-radius: 50px;
+  background-color: red;
+  opacity: 0.9;
+}
+
+.cart .cart-totalprice span {
+  color: #605C56;
 }
 
 .product-img {
@@ -214,6 +220,7 @@ h1 {
 }
 
 .product-detail__title {
+  text-align: center;
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +238,10 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-detail__subtitle a {
+  color: #FF9552;
 }
 
 .product-detail__price {
@@ -256,4 +267,28 @@ h1 {
 .product-detail {
   margin-top: 50px;
 }
-/*# sourceMappingURL=styles2.css.map */
+
+#id_quantity {
+  border: none;
+}
+
+.form-btn {
+  border: none;
+  background-color: #FF9552;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#content label {
+  color: red;
+}
+
+#content #id_last_name {
+  margin: 20 0 0 1;
+}
+
+#content input {
+  border: 1px solid  #FF9552;
+  margin: 0;
+}
+/*# sourceMappingURL=styles3.css.map */

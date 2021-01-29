@@ -3,9 +3,11 @@
 {% block title %}Checkout{% endblock %}
 
 {% block content %}
-    <h1>Checkout</h1>
+    <div class="row justify-content-center">
+        <h1 class="col-xl-2">Checkout</h1>
+    </div>
     <div class="order-info">
-        <h3>Your order</h3>
+        <h3 class="col-xl-3">Your order</h3>
         <ul>
             {% for item in cart %}
                 <li>
@@ -16,9 +18,11 @@
         </ul>
         <p>Total: ${{ cart.get_total_price }}</p>
     </div>
-    <form action="." method="post" class="order-form">
-        {{ form.as_p }}
-        <p><input type="submit" value="Place order"></p>
-        {% csrf_token %}
-    </form>
+    <div class="row justify-content-center">
+        <form class="col-xl-4" action="." method="post" class="order-form">
+            {{ form.as_p }} 
+            <p><input type="submit" value="Place order"></p>
+            {% csrf_token %}
+        </form> 
+    </div>
 {% endblock %}

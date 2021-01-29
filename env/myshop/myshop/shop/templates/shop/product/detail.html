@@ -21,14 +21,14 @@
       
         </div>
     </div>
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
         <p class="price col-xl-3 product-detail__price">${{ product.price }}</p>
-    </div>
+    </div> -->
     <div class="row justify-content-center">
         <form class="col-xl-3 product-detail__form" action="{% url "cart:cart_add" product.id %}" method="post">
             {{ cart_product_form }}
             {% csrf_token %}
-            <input type="submit" value="Add to cart">
+            <input class="form-btn" type="submit" value="Add to cart">
         </form>
     </div>
 {% endblock %}
